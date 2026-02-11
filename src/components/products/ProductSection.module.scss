@@ -1,0 +1,49 @@
+.products {
+  margin-top: 90px;
+  margin-bottom: 64px;
+}
+
+.products__top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+
+  .heading {
+    font-size: 55px;
+  }
+
+  .filter_buttons {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    .heading_button {
+      font-size: 17px;
+      font-family: "Chilanka", cursive;
+      text-transform: uppercase;
+      border-bottom: 2px solid #d9d9d8;
+      background: none;
+    }
+    .selected {
+      border-bottom: 2px solid #dead6f;
+    }
+  }
+
+  .redirect {
+    text-transform: uppercase;
+    padding: 28px 50px;
+    border: 1px solid #41403e;
+    color: #41403e;
+    background: none;
+    font-size: 19px;
+    font-family: "Chilanka", cursive;
+  }
+}
+
+.products__catalog {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}

@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Chilanka", cursive;
+  color: #41403e;
+}
+
+.text_accent {
+  color: #dead6f;
+}
+
+
+.header {
+  &__top {
+    display: flex;
+    padding: 28px 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ededed;
+
+    p {
+      text-align: right;
+      font-size: 19px;
+    }
+
+    &__logo {
+      display: block;
+    }
+
+    .input-search {
+      border: 1px solid #eaeaea;
+      border-radius: 4px;
+      padding: 16px 25px;
+      width: 472px;
+    }
+  }
+
+  .menu,
+  .info {
+    border-bottom: 1px solid #ededed;
+  }
+
+  .header__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px 0;
+
+    .menu-link {
+      display: flex;
+      list-style: none;
+      column-gap: 50px;
+      margin-right: 180px;
+
+      a {
+        font-size: 19px;
+        color: #41403e;
+        text-decoration: none;
+      }
+    }
+
+    .menu-icon {
+      display: flex;
+      gap: 40px;
+    }
+  }
+}
+
+.hero {
+  background: #f9f3ec;
+  padding: 80px 0;
+
+  &__inner {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  &__image img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__label {
+    color: #dead6f;
+    font-size: 18px;
+    letter-spacing: 10%;
+  }
+
+  &__title {
+    font-size: 74px;
+    margin: 20px 0 30px;
+
+    span {
+      color: #dead6f;
+    }
+  }
+
+  .btn {
+    padding: 28px 74px;
+    border: 1px solid #41403e;
+    background: transparent;
+    border-radius: 4px;
+    font-size: 19px;
+    color: #41403e;
+  }
+
+  @media (max-width: 720px) {
+    .hero__content {
+      text-align: center;
+    }
+  }
+}
+
+.products {
+  .container {
+  }
+}
+
+.offer {
+  background: #f9f3ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0;
+  position: relative;
+
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 640px;
+    position: relative;
+    z-index: 0;
+
+    input {
+      background: #fff;
+      border: 1px solid #41403e40;
+      padding: 20px;
+      width: 100%;
+    }
+
+    ::placeholder {
+      font-family: "Chilanka", cursive;
+      font-size: 17px;
+    }
+
+    button {
+      background: #41403e;
+      padding: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: "Chilanka", cursive;
+      font-size: 19px;
+      width: 100%;
+    }
+  }
+}
+
+.gallery {
+  padding: 85px 10px;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @media (max-width: 720px) {
+    .gallery__grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+.footer {
+  padding: 48px 0;
+  background: #f7eee4;
+  text-align: center;
+
+  &__copy {
+    color: #908f8d;
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+}
+
+button {
+  font-family: "Chilanka", cursive;
+}

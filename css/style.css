@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Chilanka&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Chilanka", cursive;
+  color: #41403E;
+}
+
+.text_accent {
+  color: #DEAD6F;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.header__top {
+  display: flex;
+  padding: 28px 0;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #EDEDED;
+}
+.header__top p {
+  text-align: right;
+  font-size: 19px;
+}
+.header__top__logo {
+  display: block;
+}
+.header__top .input-search {
+  border: 1px solid #EAEAEA;
+  border-radius: 4px;
+  padding: 16px 25px;
+  width: 472px;
+}
+.header .menu, .header .info {
+  border-bottom: 1px solid #EDEDED;
+}
+.header .header__menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+.header .header__menu .menu-link {
+  display: flex;
+  list-style: none;
+  column-gap: 50px;
+  margin-right: 180px;
+}
+.header .header__menu .menu-link a {
+  font-size: 19px;
+  color: #41403E;
+  text-decoration: none;
+}
+.header .header__menu .menu-icon {
+  display: flex;
+  gap: 40px;
+}
+
+.hero {
+  background: #F9F3EC;
+  padding: 80px 0;
+}
+.hero__inner {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.hero__image img {
+  width: 100%;
+  object-fit: cover;
+}
+.hero__label {
+  color: #DEAD6F;
+  font-size: 18px;
+  letter-spacing: 10%;
+}
+.hero__title {
+  font-size: 74px;
+  margin: 20px 0 30px;
+}
+.hero__title span {
+  color: #DEAD6F;
+}
+.hero .btn {
+  padding: 28px 74px;
+  border: 1px solid #41403E;
+  background: transparent;
+  border-radius: 4px;
+  font-size: 19px;
+  color: #41403E;
+}
+@media (max-width: 720px) {
+  .hero .hero__content {
+    text-align: center;
+  }
+}
+
+.offer {
+  background: #F9F3EC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 150px 0;
+  position: relative;
+}
+.offer__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 60px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+.offer__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 640px;
+  position: relative;
+  z-index: 0;
+}
+.offer__form input {
+  background: #fff;
+  border: 1px solid rgba(65, 64, 62, 0.2509803922);
+  padding: 20px;
+  width: 100%;
+}
+.offer__form ::placeholder {
+  font-family: "Chilanka", cursive;
+  font-size: 17px;
+}
+.offer__form button {
+  background: #41403E;
+  padding: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Chilanka", cursive;
+  font-size: 19px;
+  width: 100%;
+}
+
+.gallery {
+  padding: 85px 10px;
+}
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 720px) {
+  .gallery .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.footer {
+  padding: 48px 0;
+  background: #F7EEE4;
+  text-align: center;
+}
+.footer__copy {
+  color: #908F8D;
+  margin-bottom: 14px;
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=style.css.map */

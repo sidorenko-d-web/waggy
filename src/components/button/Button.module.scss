@@ -1,0 +1,24 @@
+.button {
+  text-transform: uppercase;
+  padding: 28px 50px 24px;
+  border: 1px solid #41403e;
+  color: #41403e;
+  background: none;
+  font-size: 19px;
+  font-family: "Chilanka", cursive;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s;
+
+  &.dark {
+    background-color: #41403e;
+
+    &:hover {
+      background-color: #6e6c6a;
+    }
+  }
+
+  &:hover {
+    background-color: #dead6f;
+  }
+}
