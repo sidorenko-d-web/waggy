@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.wrapper {
+  position: relative;
+  .extra {
+    position: absolute;
+    font-size: 18px;
+    border: 1px solid #41403e40;
+    top: 14px;
+    left: 14px;
+    padding: 8px 12px 4px;
+    border-radius: 6px;
+    text-transform: capitalize;
+  }
+
+  .img {
+    background: #eeebe5;
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+
+  .title {
+    font-size: 26px;
+    margin-bottom: 4px;
+  }
+
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 7px;
+  }
+
+  .price {
+    font-family: "Montserrat";
+    color: #dead6f;
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+
+    button {
+      background: none;
+      font-size: 17px;
+      font-family: "Chilanka", cursive;
+      text-transform: uppercase;
+    }
+
+    .number {
+      border-radius: 4px;
+      border: 1px solid #41403e35;
+      width: 67px;
+      font-size: 32px;
+      height: 38px;
+      padding: 4px 9px;
+    }
+
+    .plus,
+    .minus {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      background: #dead6f;
+      border-radius: 999999px;
+      height: 38px;
+      width: 38px;
+      font-weight: 700;
+      aspect-ratio: 1/1;
+    }
+
+    .minus {
+      background: #00000020;
+    }
+
+    .like {
+      border-radius: 4px;
+      border: 1px solid #41403e35;
+      width: 35px;
+      height: 38px;
+      padding: 12px 9px;
+
+      img {
+        width: 16px;
+        height: 13px;
+      }
+
+      &.liked{
+        background: #dead6fA0;
+      }
+    }
+  }
+
+  .checkbox {
+    position: absolute;
+    top: 10px;
+    left: 14px;
+
+    input {
+      display: none;
+      visibility: hidden;
+    }
+  }
+}

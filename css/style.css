@@ -180,11 +180,11 @@ body {
   padding: 48px 0;
   background: #F7EEE4;
   text-align: center;
+  margin-top: auto;
 }
 .footer__copy {
   color: #908F8D;
   margin-bottom: 14px;
   font-size: 18px;
 }
-
 /*# sourceMappingURL=style.css.map */

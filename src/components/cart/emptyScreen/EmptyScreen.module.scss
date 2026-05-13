@@ -1,0 +1,28 @@
+.wrapper {
+  padding: 62px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 56px;
+
+  .textWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+
+    .h2 {
+      text-align: center;
+      font-size: 55px;
+      margin-bottom: 24px;
+      text-transform: capitalize;
+    }
+
+    .p {
+      text-align: center;
+      font-size: 32px;
+      color: #dead6f;
+      text-transform: capitalize;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.wrapper {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 18px 12px 18px 5px;
+  background: #f7eee4;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  align-items: center;
+
+  .text {
+    font-size: 55px;
+    font-weight: normal;
+    display: block;
+  }
+
+  .buttonsWrapper {
+    display: flex;
+    gap: 55px;
+  }
+}

@@ -17,7 +17,6 @@ body {
   color: #dead6f;
 }
 
-
 .header {
   &__top {
     display: flex;
@@ -125,10 +124,6 @@ body {
   }
 }
 
-.products {
-  .container {
-  }
-}
 
 .offer {
   background: #f9f3ec;
@@ -218,4 +213,10 @@ body {
 
 button {
   font-family: "Chilanka", cursive;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

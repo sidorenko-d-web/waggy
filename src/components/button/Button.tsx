@@ -6,13 +6,19 @@ export function Button({
   children,
   onClick,
   variant,
+  className,
 }: PropsWithChildren<{
   onClick?: (arg: any) => void;
   variant?: "light" | "dark";
+  className?: string;
 }>) {
   return (
     <button
-      className={clsx(styles.button, variant === "dark" && styles.dark)}
+      className={clsx(
+        styles.button,
+        variant === "dark" && styles.dark,
+        className,
+      )}
       onClick={onClick}
     >
       {children}

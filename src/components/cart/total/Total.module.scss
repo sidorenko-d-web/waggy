@@ -1,0 +1,19 @@
+.wrapper {
+  background: #f7eee4;
+  padding: 18px 12px 18px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+  margin-bottom: 153px;
+
+  .text {
+    font-size: 55px;
+
+    span {
+      font-size: 48px;
+      color: #dead6f;
+    }
+  }
+}
