@@ -11,7 +11,7 @@ export function GallerySection() {
     <section className="gallery">
       <div className="gallery__grid">
         {images.map((item) => (
-          <img src={item} />
+          <img src={item} key={item}/>
         ))}
       </div>
     </section>

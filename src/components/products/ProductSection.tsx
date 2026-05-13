@@ -4,6 +4,10 @@ import clsx from "clsx";
 import { Button } from "../button/Button";
 import { products } from "../../assets/data";
 import { ProductItem } from "./ProductItem/ProductItem";
+import type {
+  TypeLocalStorageItem,
+  TypeSetLocalStorageItem,
+} from "../../types/types";
 
 type filter = "all" | "cat" | "dog" | "bird";
 const filters: filter[] = ["all", "cat", "dog", "bird"];
@@ -11,9 +15,13 @@ const filters: filter[] = ["all", "cat", "dog", "bird"];
 export function ProductsSection({
   setCart,
   search,
+  handleSetFavorites,
+  favorites,
 }: {
-  setCart: (arg: { id: number }) => void;
+  setCart: (arg: TypeLocalStorageItem) => void;
   search: string;
+  favorites?: TypeLocalStorageItem[];
+  handleSetFavorites: TypeSetLocalStorageItem;
 }) {
   const [filter, setFilter] = useState<filter>(filters[0]);
 
@@ -46,7 +54,13 @@ export function ProductsSection({
         </div>
         <div className={styles.products__catalog}>
           {data.map((item, index) => (
-            <ProductItem setCart={setCart} item={item} key={index} />
+            <ProductItem
+              setCart={setCart}
+              item={item}
+              key={index}
+              handleSetFavorites={handleSetFavorites}
+              favorites={favorites}
+            />
           ))}
         </div>
       </div>

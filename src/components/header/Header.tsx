@@ -65,7 +65,9 @@ export function Header({
           </nav>
           <div className={styles.menu_icon}>
             <img src="img/account.svg" alt="account" />
-            <img src="img/heart.svg" alt="heart" />
+            <a className={styles.cart} href="./favorites">
+              {location === 'favorites' ? <img src="img/heartYellow.svg" alt="heart" /> : <img src="img/heart.svg" alt="heart" />}
+            </a>
             <a className={styles.cart} href="./cart">
               <img src="img/cart.svg" alt="cart" />
               {cart?.length && (
