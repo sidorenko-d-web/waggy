@@ -19,6 +19,7 @@ export function Button({
         variant === "dark" && styles.dark,
         className,
       )}
+      type="button"
       onClick={onClick}
     >
       {children}

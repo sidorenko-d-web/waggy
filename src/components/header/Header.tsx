@@ -70,7 +70,7 @@ export function Header({
             </a>
             <a className={styles.cart} href="./cart">
               <img src="img/cart.svg" alt="cart" />
-              {cart?.length && (
+              {!!cart?.length && (
                 <div className={styles.number}>{cart?.length}</div>
               )}
             </a>
